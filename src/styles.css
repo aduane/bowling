@@ -1,0 +1,91 @@
+div.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50%;
+}
+
+div.frame {
+  font-size: 12pt;
+  width: 32%;
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+div.frame:nth-child(3),
+div.frame:nth-child(6),
+div.frame:nth-child(9),
+div.frame:nth-child(10) {
+  border-right: 1px solid black;
+}
+
+div.frame:nth-child(8),
+div.frame:nth-child(9),
+div.frame:nth-child(10) {
+  border-bottom: 1px solid black;
+}
+
+div.frame.current-frame {
+  background-color: lightgray;
+}
+
+div.throw.current-throw {
+  background-color: gray;
+}
+
+div.throw {
+  padding: 10px;
+  width: 32%;
+  display: flex;
+  justify-content: center;
+}
+
+div.throw:nth-child(2),
+div.throw:nth-child(3) {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+div.throw:first-child:nth-last-child(4),
+div.throw:nth-child(2):nth-last-child(3),
+div.throw:nth-child(3):nth-last-child(2) {
+  width: 15%;
+}
+
+
+div.running-total {
+  width: 100%;
+  padding: 10px;
+  flex-grow: 1;
+  text-align: right;
+}
+
+div.data-entry {
+  margin-top: 40px;
+  width: 100%;
+}
+
+div.keypad {
+  flex-grow: 2;
+}
+
+div.keypad-entry {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+div.keypad-row {
+  display: flex;
+  justify-content: center;
+}
+
+div.keypad-entry button {
+  width: 20%;
+}
+
+div.keypad button {
+  aspect-ratio: 1 / 1;
+  width: 30%;
+}
